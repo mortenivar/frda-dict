@@ -116,13 +116,17 @@ that the 'h' is aspirated. Then, it shows the phonetic representation of the
 word's pronunciation between the two slashes. Finally, it shows three
 possible Danish translations of the word. On my system, Arch Linux, using
 sqlite3, version 3.54.0, the output will be shown with a nice utf-8 box
-around it by default, but this isn't possible to render correctly with
-Github's markdown, so here it is shown in list format instead, which is also
-possible to use with a little change to the bash script with the search
-functions, see below.
+around it by default, but the boxed output format may create problems on
+Termux and with older versions of sqlite, so I have made the output format
+default to 'list'. You may want to edit the french_danish_srchfuncs.sh script
+at around line 14 and change the line
 
-See the Wikipedia page [French phonology](https://en.wikipedia.org/wiki/French_phonology) for 
-an explanation of the phonetic symbols.
+MODE=list to MODE=box
+
+and see how it goes.
+
+Otherwise, see the Wikipedia page [French phonology](https://en.wikipedia.org/wiki/French_phonology) for an
+explanation of the phonetic symbols.
 
 Since the command
 ```bash
@@ -149,7 +153,7 @@ dafr ugle
 > ugle
 > - chouette <f> /ʃwɛt/
 > ugle
-> - hibou <m, h aspiré> /ibu/
+> - hibou <m, h aspiré> /ibu/\
 > ugle (ens) hår
 > - décoiffer <v> /dekwafe/
 
@@ -186,7 +190,7 @@ On an iPhone, maybe iSH will also work?
 ## Contributing
 
 Translations of new words are always welcome. If you have any you would like to share, I
-prefer that you send them to me at <mortenbo at hotmail dot com>
+prefer that you send them to me at \<mortenbo at hotmail dot com\>
 
 ---
 ## Attributions, Copyrights & Licenses
@@ -223,5 +227,5 @@ This applies to the files:
 **french_danish_srchfuncs.sh**\
 **Makefile**
 
-- **Copyright:** Morten Bo Johansen <mortenbo at hotmail dot com>
+- **Copyright:** Morten Bo Johansen \<mortenbo at hotmail dot com\>
 - **License:** [**MIT**](https://mit-license.org/)
