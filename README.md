@@ -6,7 +6,7 @@ This repository contains the following files:
 - **french_danish_dictionary.txt.gz** - a compressed, raw text file with a French->Danish dictionary.
 - **build_database.py** - a python script to build an sqlite3 dictionary database from the text file.
 - **french_danish_srchfuncs.sh** - a bash script which provides the user search functions.
-- **Lexique4.1.tsv.gz** - a compressed tab separated text file, holding phonetic information for about 170.000 French words
+- **Lexique4.1.tsv.gz** - a compressed tab separated text file, holding phonetic information for about 190.000 French words
 - **Makefile** - a make(1) script to automate building and installing the dictionary.
 
 ---
@@ -151,11 +151,11 @@ dafr ugle
 ```
 *Output example:*
 > ugle
-> - chouette <f> /ʃwɛt/
+> - chouette \<f\> /ʃwɛt/
 > ugle
 > - hibou <m, h aspiré> /ibu/\
 > ugle (ens) hår
-> - décoiffer <v> /dekwafe/
+> - décoiffer \<v\> /dekwafe/
 
 shows the French translations of the Danish word 'ugle ('owl'), revealing that
 'ugle' can be both 'hibou' and 'chouette' and also that it is a verb, meaning
