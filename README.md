@@ -106,10 +106,12 @@ Will print out all 44(!) inflections of the French verb for "to be".
 frda hibou
 ```
 *Output example:*
-> hibou <m, h aspiré> /ibu/
-> - ugle
-> - hornugle
-> - enspænder
+```text
+hibou <m, h aspiré> /ibu/
+• ugle
+• hornugle
+• enspænder
+```
 
 showing that the French word for 'owl' is a noun of gender masculine and
 that the 'h' is aspirated. Then, it shows the phonetic representation of the
@@ -150,13 +152,14 @@ takes the same arguments a 'frda'. So the command
 dafr ugle
 ```
 *Output example:*
-> ugle
-> - chouette \<f\> /ʃwɛt/
-> ugle
-> - hibou <m, h aspiré> /ibu/\
-> ugle (ens) hår
-> - décoiffer \<v\> /dekwafe/
-
+```text
+ugle
+• chouette <f> /ʃwɛt/
+ugle
+• hibou <m, h aspiré> /ibu/
+ugle (ens) hår
+• décoiffer <v> /dekwafe/
+```
 shows the French translations of the Danish word 'ugle ('owl'), revealing that
 'ugle' can be both 'hibou' and 'chouette' and also that it is a verb, meaning
 to ruffle one's hair.
