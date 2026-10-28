@@ -14,33 +14,8 @@ from pathlib import Path
 # Files
 BASE = Path(__file__).resolve().parent
 DICT_FILE = BASE / "french_danish_dictionary.txt"
-# LEXIQUE_FILE = BASE / "Lexique383.tsv"
 LEXIQUE_FILE = BASE / "Lexique4.1.tsv"
 DATABASE = BASE / "french_danish.db"
-
-
-# Lexique's phonetic characters -> Unicode
-PHON_MAP = str.maketrans({
-    "E": "ɛ",
-    "O": "ɔ",
-    "°": "ə",
-    "@": "ɑ̃",
-    "§": "ɔ̃",
-    "1": "œ̃",
-    "5": "ɛ̃",
-    "S": "ʃ",
-    "Z": "ʒ",
-    "R": "ʀ",
-    "8": "ɥ",
-    "2": "ø",
-    "9": "œ",
-})
-
-
-def convert_phon(phon):
-    """Converts Lexique's notation into Unicode."""
-    return phon.translate(PHON_MAP)
-
 
 # Read Lexique
 def load_lexique(filename):
@@ -79,8 +54,6 @@ def load_lexique(filename):
 
             if not word or not phon:
                 continue
-
-            phon = convert_phon(phon)
 
             # Lexique may contain more than one information about the same
             # orthographic form. We use the first non-empty.
